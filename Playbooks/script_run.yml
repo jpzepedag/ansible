@@ -3,9 +3,11 @@
   hosts: 192.168.210.102
 
   tasks:
+    - name: Execue script attempt 2
+      command: sh /tmp/script.sh archivo2.txt
+
     - name: Execue script attempt 1
       script: /tmp/script.sh archivo1.txt
 
-    - name: Execue script attempt 2
-      command: sh /tmp/script.sh archivo2.txt
+
   
