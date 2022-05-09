@@ -1,0 +1,8 @@
+---
+- name: This is runnin a scrpit example
+  hosts: 192.168.210.102
+
+  tasks:
+    - name: Execue script
+       script: /tmp/script.sh archivo1.txt
+  
