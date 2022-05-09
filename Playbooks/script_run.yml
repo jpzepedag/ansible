@@ -7,5 +7,5 @@
       script: /tmp/script.sh archivo1.txt
 
     - name: Execue script attempt 2
-    command: sh /tmp/script.sh archivo2.txt
+      command: sh /tmp/script.sh archivo2.txt
   
