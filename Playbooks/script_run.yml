@@ -5,10 +5,10 @@
   tasks:
 
     - name: Execue script cycle 1
-      command: sh /tmp/script.sh {{ prod_environment }} {{ project_name }}
+      command: sh /tmp/script.sh {{ prod_environment }} {{ project_name1 }}
 
     - name: Execue script cycle 2 
-      command: sh /tmp/script.sh {{ prod_environment }} {{ project_name }}
+      command: sh /tmp/script.sh {{ prod_environment }} {{ project_name2 }}
 
     - name: Execue script cycle 3
-      command: sh /tmp/script.sh {{ prod_environment }} {{ project_name }}
+      command: sh /tmp/script.sh {{ prod_environment }} {{ project_name3 }}
