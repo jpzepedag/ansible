@@ -4,5 +4,5 @@
 
   tasks:
     - name: Execue script
-       script: /tmp/script.sh archivo1.txt
+       script: "/tmp/script.sh archivo1.txt"
   
