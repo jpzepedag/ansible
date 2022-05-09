@@ -3,11 +3,12 @@
   hosts: 192.168.210.102
 
   tasks:
-    - name: Execue script cycle 1
-      command: sh /tmp/script.sh archivo1.txt
 
-    - name: Execue script cycle 2
-      command: sh /tmp/script.sh archivo2.txt
+    - name: Execue script cycle 1
+      command: sh /tmp/script.sh {{ prod_environment }} {{ project_name }}
+
+    - name: Execue script cycle 2 
+      command: sh /tmp/script.sh {{ prod_environment }} {{ project_name }}
 
     - name: Execue script cycle 3
-      command: sh /tmp/script.sh archivo3.txt
+      command: sh /tmp/script.sh {{ prod_environment }} {{ project_name }}
