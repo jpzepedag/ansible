@@ -4,9 +4,4 @@
   
   tasks:
   - name: update hostnames
-    hostname:
-      name: tarro1
-
-  - name: Set a hostname
-    ansible.builtin.hostname:
-      name: tarro2
+    ansible.builtin.shell: hostnamectl set-hostname tarro1
