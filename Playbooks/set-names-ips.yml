@@ -3,6 +3,11 @@
   hosts: 192.168.29.109
   
   tasks:
+  - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
+  copy:
+    content: hello worldn
+    dest: /tmp/testfile.txt
+
   - name: update hostnames
     hostname:
       name: tarro1
