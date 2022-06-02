@@ -3,14 +3,6 @@
   hosts: 192.168.29.109
   
   tasks:
-  - name: "update hostnames"
+  - name: update hostnames
     hostname:
       name: "{{ new-hostname }}"
-
-    #- name: Set hostname
-    #  ansible.builtin.hostname:
-    #    name: "{{ new-hostname }}"
-        
-    #- name: Set new IP adress
-    #  ip: "{{host-new-ip}}"
-    #  interface: eth0
