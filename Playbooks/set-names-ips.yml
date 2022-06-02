@@ -1,14 +1,12 @@
 ---
 - name: Set new hostname and IP
   hosts: 192.168.29.109
-  become: yes
   
   tasks:
-      
-    - name: "update hostnames"
-      hostname:
-        name: "{{ new-hostname }}"
-    
+  - name: "update hostnames"
+    hostname:
+      name: "{{ new-hostname }}"
+
     #- name: Set hostname
     #  ansible.builtin.hostname:
     #    name: "{{ new-hostname }}"
