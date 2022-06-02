@@ -4,10 +4,14 @@
   become: yes
   
   tasks:
-
-    - name: Set hostname 
-      ansible.builtin.hostname:
+      
+    - name: "update hostnames"
+      hostname:
         name: "{{ new-hostname }}"
+    
+    #- name: Set hostname
+    #  ansible.builtin.hostname:
+    #    name: "{{ new-hostname }}"
         
     #- name: Set new IP adress
     #  ip: "{{host-new-ip}}"
