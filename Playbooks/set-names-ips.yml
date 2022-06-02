@@ -1,6 +1,6 @@
 ---
 - name: Set new hostname and IP
-  hosts: {{host-current-ip}}
+  hosts: "{{host-current-ip}}"
   become: yes
   
   tasks:
