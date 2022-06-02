@@ -7,7 +7,7 @@
 
     - name: Set hostname 
       ansible.builtin.hostname:
-        name: "{{new-hotname}}"
+        name: "{{ new-hostname }}"
         
     #- name: Set new IP adress
     #  ip: "{{host-new-ip}}"
