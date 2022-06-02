@@ -4,9 +4,9 @@
   
   tasks:
   - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
-  copy:
-    content: hello worldn
-    dest: /tmp/testfile.txt
+    copy:
+      content: hello worldn
+      dest: /tmp/testfile.txt
 
   - name: update hostnames
     hostname:
